@@ -121,7 +121,7 @@
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = U38WFWB5D6;
 						LastSwiftMigration = 0830;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.InAppPurchase = {
 								enabled = 1;
@@ -297,14 +297,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Sho Ito (9NL5NEWT4T)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = U38WFWB5D6;
 				INFOPLIST_FILE = InAppPurchase/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jp.shoito.InAppPurchaseTest;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.aryzae.InAppPurchaseTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "89b2b3d5-5724-457a-a70e-bc2e7e572352";
-				PROVISIONING_PROFILE_SPECIFIER = "In App Purchase Test Development";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "InAppPurchase/InAppPurchase-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -317,14 +318,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Sho Ito (U38WFWB5D6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = U38WFWB5D6;
 				INFOPLIST_FILE = InAppPurchase/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jp.shoito.InAppPurchaseTest;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.aryzae.InAppPurchaseTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "452374f8-9b1a-49e8-957e-c123730357cf";
-				PROVISIONING_PROFILE_SPECIFIER = "In App Purchase Test (App Store)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "InAppPurchase/InAppPurchase-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};

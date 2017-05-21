@@ -266,7 +266,7 @@
 				DEVELOPMENT_TEAM = U38WFWB5D6;
 				INFOPLIST_FILE = KeychainTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jp.shoito.KeychainTest;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.aryzae.KeychainTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -279,7 +279,7 @@
 				DEVELOPMENT_TEAM = U38WFWB5D6;
 				INFOPLIST_FILE = KeychainTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jp.shoito.KeychainTest;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.aryzae.KeychainTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -304,6 +304,7 @@
 				C683E0B31EA6522000B559AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
