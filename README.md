@@ -10,3 +10,4 @@ Swift勉強、テストコード用
 |Network|NetworkReachabilityのSwift3版プロジェクト|
 |QRCodeCreater|指定した文字列からQRコードを作成するプロジェクト|
 |QRCodeReader|QRコードを読み、文字列として表示するプロジェクト|
+|UITest|UITestで画面操作のテスト、メソッドのテストの書き方を学んだプロジェクト|
