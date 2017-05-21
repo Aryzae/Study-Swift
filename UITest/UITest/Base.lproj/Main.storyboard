@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UITest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fv9-8m-gy4">
+                                <rect key="frame" x="137.5" y="20" width="100" height="100"/>
+                                <color key="backgroundColor" cyan="0.0" magenta="0.0" yellow="0.24571659479999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                <accessibility key="accessibilityConfiguration" identifier="calcLabel"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="8GS-3l-TWP"/>
+                                    <constraint firstAttribute="width" constant="100" id="DmE-h2-ynd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Yhu-MV-bbz">
+                                <rect key="frame" x="20" y="210" width="335" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dKf-0G-Z0d">
+                                        <rect key="frame" x="0.0" y="0.0" width="157.5" height="50"/>
+                                        <color key="backgroundColor" red="1" green="0.71016143409999999" blue="0.80681262090000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="addButton"/>
+                                        <state key="normal" title="Add"/>
+                                        <connections>
+                                            <action selector="touchUpInsideAddButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EwI-IC-tA2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sys-xq-y1g">
+                                        <rect key="frame" x="177.5" y="0.0" width="157.5" height="50"/>
+                                        <color key="backgroundColor" red="0.72156864399999998" green="0.88627451660000001" blue="0.59215688710000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="multiplyButton"/>
+                                        <state key="normal" title="Multiple"/>
+                                        <connections>
+                                            <action selector="touchUpInsideMultiplyButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pDY-h0-BlG"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="sys-xq-y1g" firstAttribute="height" secondItem="dKf-0G-Z0d" secondAttribute="height" id="7ev-qt-b3w"/>
+                                    <constraint firstAttribute="height" constant="50" id="esw-sf-Oqw"/>
+                                    <constraint firstItem="sys-xq-y1g" firstAttribute="width" secondItem="dKf-0G-Z0d" secondAttribute="width" id="mKe-gM-lQ1"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="uAE-tv-BZy">
+                                <rect key="frame" x="20" y="140" width="335" height="50"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dkn-3c-pHd">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="50"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="lhsTextField"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZLe-VD-gWB">
+                                        <rect key="frame" x="160" y="0.0" width="15.5" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nRa-al-FyR">
+                                        <rect key="frame" x="185.5" y="0.0" width="149.5" height="50"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="rhsTextField"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="nRa-al-FyR" firstAttribute="width" secondItem="Dkn-3c-pHd" secondAttribute="width" id="p4W-UD-e0j"/>
+                                    <constraint firstAttribute="height" constant="50" id="wb3-2R-Sqx"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Yhu-MV-bbz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="1bP-8H-BJq"/>
+                            <constraint firstAttribute="trailing" secondItem="uAE-tv-BZy" secondAttribute="trailing" constant="20" id="4cW-oK-iJV"/>
+                            <constraint firstItem="uAE-tv-BZy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="EC4-05-H8S"/>
+                            <constraint firstItem="uAE-tv-BZy" firstAttribute="top" secondItem="fv9-8m-gy4" secondAttribute="bottom" constant="20" id="OXk-QI-pwb"/>
+                            <constraint firstItem="fv9-8m-gy4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Yr9-7d-7BS"/>
+                            <constraint firstItem="fv9-8m-gy4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="h8G-12-VkS"/>
+                            <constraint firstAttribute="trailing" secondItem="Yhu-MV-bbz" secondAttribute="trailing" constant="20" id="mzG-al-kTA"/>
+                            <constraint firstItem="Yhu-MV-bbz" firstAttribute="top" secondItem="uAE-tv-BZy" secondAttribute="bottom" constant="20" id="zIn-sR-XDz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addButton" destination="dKf-0G-Z0d" id="Ffm-xa-ozc"/>
+                        <outlet property="calcLabel" destination="fv9-8m-gy4" id="thn-v8-Uab"/>
+                        <outlet property="lhsTextField" destination="Dkn-3c-pHd" id="p5J-0Q-CB2"/>
+                        <outlet property="multiplyButton" destination="sys-xq-y1g" id="dxI-JY-9XL"/>
+                        <outlet property="rhsTextField" destination="nRa-al-FyR" id="vY9-aA-Nqo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="136.28185907046478"/>
+        </scene>
+    </scenes>
+</document>
