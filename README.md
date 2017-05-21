@@ -1,4 +1,4 @@
-# Study-Swift
+# Study-Swift (Swift3.1対応)
 Swift勉強、テストコード用
 
 |フォルダ名|説明|
