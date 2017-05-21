@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="InAppPurchase" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ify-GW-qbJ">
+                                <rect key="frame" x="87.5" y="311.5" width="200" height="44"/>
+                                <color key="backgroundColor" cyan="0.24230243430000001" magenta="0.0001772865653" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="UEG-In-nuu"/>
+                                    <constraint firstAttribute="width" constant="200" id="qsw-TS-K06"/>
+                                </constraints>
+                                <state key="normal" title="課金！"/>
+                                <connections>
+                                    <action selector="touchUpInsidePurchase:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y0c-wE-LCC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Us1-Hq-3Cf">
+                                <rect key="frame" x="112" y="405.5" width="150" height="44"/>
+                                <color key="backgroundColor" red="0.95686274770000002" green="0.65882354970000001" blue="0.54509806630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="CDH-p6-PXg"/>
+                                    <constraint firstAttribute="height" constant="44" id="r8c-6T-ZvE"/>
+                                </constraints>
+                                <state key="normal" title="購入復元"/>
+                                <connections>
+                                    <action selector="touchUpInsideRestore:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iWu-LP-Sc9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nNQ-CG-g2e">
+                                <rect key="frame" x="37.5" y="41.5" width="300" height="200"/>
+                                <color key="backgroundColor" cyan="0.0" magenta="0.0" yellow="0.24571659479999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="2nJ-gN-BYS"/>
+                                    <constraint firstAttribute="height" constant="200" id="fcX-FH-UaA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Us1-Hq-3Cf" firstAttribute="top" secondItem="Ify-GW-qbJ" secondAttribute="bottom" constant="50" id="6gz-p9-HJ2"/>
+                            <constraint firstItem="Us1-Hq-3Cf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CGa-gY-qhZ"/>
+                            <constraint firstItem="Ify-GW-qbJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="JS9-Ma-dI0"/>
+                            <constraint firstItem="nNQ-CG-g2e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lio-n2-e6e"/>
+                            <constraint firstItem="Ify-GW-qbJ" firstAttribute="top" secondItem="nNQ-CG-g2e" secondAttribute="bottom" constant="70" id="WwX-w5-eTc"/>
+                            <constraint firstItem="Ify-GW-qbJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wsp-Di-c9d"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="nNQ-CG-g2e" id="bn4-po-EyY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
