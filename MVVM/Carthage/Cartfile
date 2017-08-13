@@ -1,0 +1,12 @@
+# ~> 互換性のある最大のversion指定
+# >= 指定以上の最大のversion
+# == 指定のversion
+
+# KeychainAccess latest var 3.0
+# github "kishikawakatsumi/KeychainAccess" >= 3.0
+
+# Realm latest ver 2.6
+# github "realm/realm-cocoa" >= 2.6
+
+# RxSwift latest ver 3.0 
+github "ReactiveX/RxSwift" ~> 3.0
