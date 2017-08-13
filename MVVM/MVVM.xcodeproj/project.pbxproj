@@ -14,6 +14,7 @@
 		C6643AC61F4044FA00597FF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6643AC41F4044FA00597FF8 /* LaunchScreen.storyboard */; };
 		C67BDA781F408059001D4E2A /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C67BDA761F408059001D4E2A /* RxCocoa.framework */; };
 		C67BDA791F408059001D4E2A /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C67BDA771F408059001D4E2A /* RxSwift.framework */; };
+		C67BDA7B1F408E8C001D4E2A /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67BDA7A1F408E8C001D4E2A /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		C6643AC71F4044FA00597FF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C67BDA761F408059001D4E2A /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = SOURCE_ROOT; };
 		C67BDA771F408059001D4E2A /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = SOURCE_ROOT; };
+		C67BDA7A1F408E8C001D4E2A /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				C67BDA761F408059001D4E2A /* RxCocoa.framework */,
 				C67BDA771F408059001D4E2A /* RxSwift.framework */,
 				C6643ABB1F4044FA00597FF8 /* AppDelegate.swift */,
+				C67BDA7A1F408E8C001D4E2A /* ViewModel.swift */,
 				C6643ABD1F4044FA00597FF8 /* ViewController.swift */,
 				C6643ABF1F4044FA00597FF8 /* Main.storyboard */,
 				C6643AC21F4044FA00597FF8 /* Assets.xcassets */,
@@ -165,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6643ABE1F4044FA00597FF8 /* ViewController.swift in Sources */,
+				C67BDA7B1F408E8C001D4E2A /* ViewModel.swift in Sources */,
 				C6643ABC1F4044FA00597FF8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
