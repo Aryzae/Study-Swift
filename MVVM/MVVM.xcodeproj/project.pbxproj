@@ -293,7 +293,6 @@
 				DEVELOPMENT_TEAM = U38WFWB5D6;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Carthage/Build/iOS",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = MVVM/Info.plist;
@@ -312,7 +311,6 @@
 				DEVELOPMENT_TEAM = U38WFWB5D6;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Carthage/Build/iOS",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = MVVM/Info.plist;
