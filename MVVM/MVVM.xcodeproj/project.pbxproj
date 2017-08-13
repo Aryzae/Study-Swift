@@ -12,6 +12,8 @@
 		C6643AC11F4044FA00597FF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6643ABF1F4044FA00597FF8 /* Main.storyboard */; };
 		C6643AC31F4044FA00597FF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6643AC21F4044FA00597FF8 /* Assets.xcassets */; };
 		C6643AC61F4044FA00597FF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6643AC41F4044FA00597FF8 /* LaunchScreen.storyboard */; };
+		C67BDA781F408059001D4E2A /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C67BDA761F408059001D4E2A /* RxCocoa.framework */; };
+		C67BDA791F408059001D4E2A /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C67BDA771F408059001D4E2A /* RxSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		C6643AC21F4044FA00597FF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6643AC51F4044FA00597FF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6643AC71F4044FA00597FF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C67BDA761F408059001D4E2A /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = SOURCE_ROOT; };
+		C67BDA771F408059001D4E2A /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C67BDA791F408059001D4E2A /* RxSwift.framework in Frameworks */,
+				C67BDA781F408059001D4E2A /* RxCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +60,8 @@
 		C6643ABA1F4044FA00597FF8 /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				C67BDA761F408059001D4E2A /* RxCocoa.framework */,
+				C67BDA771F408059001D4E2A /* RxSwift.framework */,
 				C6643ABB1F4044FA00597FF8 /* AppDelegate.swift */,
 				C6643ABD1F4044FA00597FF8 /* ViewController.swift */,
 				C6643ABF1F4044FA00597FF8 /* Main.storyboard */,
@@ -74,6 +82,7 @@
 				C6643AB41F4044FA00597FF8 /* Sources */,
 				C6643AB51F4044FA00597FF8 /* Frameworks */,
 				C6643AB61F4044FA00597FF8 /* Resources */,
+				C6DFF3071F407C1300053044 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -131,6 +140,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C6DFF3071F407C1300053044 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C6643AB41F4044FA00597FF8 /* Sources */ = {
@@ -264,6 +291,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = U38WFWB5D6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MVVM/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -278,6 +310,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = U38WFWB5D6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MVVM/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -306,6 +343,7 @@
 				C6643ACC1F4044FA00597FF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
