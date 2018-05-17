@@ -14,6 +14,12 @@
 		C61B00F220ADBAF400D00BA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C61B00F020ADBAF400D00BA5 /* LaunchScreen.storyboard */; };
 		C61B00FD20ADBAF500D00BA5 /* MusicPropertyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61B00FC20ADBAF500D00BA5 /* MusicPropertyTests.swift */; };
 		C61B010820ADBAF500D00BA5 /* MusicPropertyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61B010720ADBAF500D00BA5 /* MusicPropertyUITests.swift */; };
+		C6C61ECB20ADC77D00303508 /* artworks_500x500.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C6C61EC620ADC77D00303508 /* artworks_500x500.jpg */; };
+		C6C61ECC20ADC77D00303508 /* fire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C6C61EC720ADC77D00303508 /* fire.mp3 */; };
+		C6C61ECD20ADC77D00303508 /* fire.flac in Resources */ = {isa = PBXBuildFile; fileRef = C6C61EC820ADC77D00303508 /* fire.flac */; };
+		C6C61ECE20ADC77D00303508 /* fire.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6C61EC920ADC77D00303508 /* fire.m4a */; };
+		C6C61ECF20ADC77D00303508 /* fire.wav in Resources */ = {isa = PBXBuildFile; fileRef = C6C61ECA20ADC77D00303508 /* fire.wav */; };
+		C6C61ED120ADC8BC00303508 /* fire_aac.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C6C61ED020ADC8BC00303508 /* fire_aac.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		C61B010320ADBAF500D00BA5 /* MusicPropertyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicPropertyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C61B010720ADBAF500D00BA5 /* MusicPropertyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPropertyUITests.swift; sourceTree = "<group>"; };
 		C61B010920ADBAF500D00BA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6C61EC620ADC77D00303508 /* artworks_500x500.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = artworks_500x500.jpg; sourceTree = "<group>"; };
+		C6C61EC720ADC77D00303508 /* fire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fire.mp3; sourceTree = "<group>"; };
+		C6C61EC820ADC77D00303508 /* fire.flac */ = {isa = PBXFileReference; lastKnownFileType = file; path = fire.flac; sourceTree = "<group>"; };
+		C6C61EC920ADC77D00303508 /* fire.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = fire.m4a; sourceTree = "<group>"; };
+		C6C61ECA20ADC77D00303508 /* fire.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = fire.wav; sourceTree = "<group>"; };
+		C6C61ED020ADC8BC00303508 /* fire_aac.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = fire_aac.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +109,7 @@
 		C61B00E620ADBAF200D00BA5 /* MusicProperty */ = {
 			isa = PBXGroup;
 			children = (
+				C6C61EC520ADC77D00303508 /* Sound */,
 				C61B00E720ADBAF300D00BA5 /* AppDelegate.swift */,
 				C61B00E920ADBAF300D00BA5 /* ViewController.swift */,
 				C61B00EB20ADBAF300D00BA5 /* Main.storyboard */,
@@ -123,6 +136,19 @@
 				C61B010920ADBAF500D00BA5 /* Info.plist */,
 			);
 			path = MusicPropertyUITests;
+			sourceTree = "<group>";
+		};
+		C6C61EC520ADC77D00303508 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				C6C61ED020ADC8BC00303508 /* fire_aac.m4a */,
+				C6C61EC620ADC77D00303508 /* artworks_500x500.jpg */,
+				C6C61EC720ADC77D00303508 /* fire.mp3 */,
+				C6C61EC820ADC77D00303508 /* fire.flac */,
+				C6C61EC920ADC77D00303508 /* fire.m4a */,
+				C6C61ECA20ADC77D00303508 /* fire.wav */,
+			);
+			path = Sound;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,9 +255,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6C61ED120ADC8BC00303508 /* fire_aac.m4a in Resources */,
 				C61B00F220ADBAF400D00BA5 /* LaunchScreen.storyboard in Resources */,
+				C6C61ECC20ADC77D00303508 /* fire.mp3 in Resources */,
+				C6C61ECB20ADC77D00303508 /* artworks_500x500.jpg in Resources */,
+				C6C61ECD20ADC77D00303508 /* fire.flac in Resources */,
 				C61B00EF20ADBAF400D00BA5 /* Assets.xcassets in Resources */,
 				C61B00ED20ADBAF300D00BA5 /* Main.storyboard in Resources */,
+				C6C61ECF20ADC77D00303508 /* fire.wav in Resources */,
+				C6C61ECE20ADC77D00303508 /* fire.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
