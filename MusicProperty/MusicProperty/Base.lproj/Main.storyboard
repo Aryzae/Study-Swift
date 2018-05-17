@@ -62,6 +62,14 @@
                                             <action selector="flacButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mcv-pl-LIJ"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjk-3v-wxT">
+                                        <rect key="frame" x="125" y="125" width="125" height="125"/>
+                                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Playing..."/>
+                                        <connections>
+                                            <action selector="playAndStopButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Fb-Lb-eM7"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vsL-1v-WWE">
                                         <rect key="frame" x="250" y="125" width="125" height="125"/>
                                         <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -72,22 +80,41 @@
                                             <action selector="waveButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hrd-2h-jQ1"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjk-3v-wxT">
-                                        <rect key="frame" x="125" y="125" width="125" height="125"/>
-                                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Playing..."/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uNI-QP-j4N">
+                                        <rect key="frame" x="125" y="250" width="125" height="125"/>
+                                        <color key="backgroundColor" red="1" green="0.52120530610000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBP-FI-4Sc">
+                                        <rect key="frame" x="250" y="250" width="125" height="125"/>
+                                        <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rP3-4n-vOq">
+                                        <rect key="frame" x="0.0" y="250" width="125" height="125"/>
+                                        <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="rP3-4n-vOq" secondAttribute="height" multiplier="1:1" id="4Er-MQ-gFc"/>
+                                        </constraints>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" red="0.098039215690000001" green="0.1058823529" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
-                                            <action selector="playAndStopButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Fb-Lb-eM7"/>
+                                            <action selector="albums:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VKd-Hb-jcH"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="rP3-4n-vOq" firstAttribute="top" secondItem="mcb-bV-YoG" secondAttribute="bottom" id="2ks-ge-gw9"/>
                                     <constraint firstItem="vsL-1v-WWE" firstAttribute="width" secondItem="mcb-bV-YoG" secondAttribute="width" id="41x-ne-glq"/>
                                     <constraint firstItem="t0D-Sn-P3R" firstAttribute="height" secondItem="Pa6-Dz-zNd" secondAttribute="height" id="4K2-uj-ziH"/>
                                     <constraint firstItem="cjk-3v-wxT" firstAttribute="width" secondItem="mcb-bV-YoG" secondAttribute="width" id="6gV-At-Zbz"/>
                                     <constraint firstItem="vsL-1v-WWE" firstAttribute="height" secondItem="mcb-bV-YoG" secondAttribute="height" id="8JN-cH-hyO"/>
+                                    <constraint firstItem="cBP-FI-4Sc" firstAttribute="leading" secondItem="uNI-QP-j4N" secondAttribute="trailing" id="8k2-Hc-AFF"/>
+                                    <constraint firstItem="cBP-FI-4Sc" firstAttribute="width" secondItem="rP3-4n-vOq" secondAttribute="width" id="BhW-hD-8WV"/>
                                     <constraint firstItem="mcb-bV-YoG" firstAttribute="top" secondItem="Pa6-Dz-zNd" secondAttribute="bottom" id="Cgt-vj-AT1"/>
+                                    <constraint firstItem="uNI-QP-j4N" firstAttribute="leading" secondItem="rP3-4n-vOq" secondAttribute="trailing" id="HAv-ar-yhV"/>
                                     <constraint firstItem="cjk-3v-wxT" firstAttribute="leading" secondItem="mcb-bV-YoG" secondAttribute="trailing" id="Hpf-dk-tcb"/>
                                     <constraint firstItem="cjk-3v-wxT" firstAttribute="top" secondItem="45f-TV-dWf" secondAttribute="bottom" id="IHD-p1-95g"/>
                                     <constraint firstItem="cjk-3v-wxT" firstAttribute="height" secondItem="mcb-bV-YoG" secondAttribute="height" id="MXV-rm-ZXI"/>
@@ -97,12 +124,19 @@
                                     <constraint firstItem="vsL-1v-WWE" firstAttribute="top" secondItem="t0D-Sn-P3R" secondAttribute="bottom" id="Rjn-20-SD9"/>
                                     <constraint firstItem="vsL-1v-WWE" firstAttribute="leading" secondItem="cjk-3v-wxT" secondAttribute="trailing" id="Rm8-rZ-a5X"/>
                                     <constraint firstItem="45f-TV-dWf" firstAttribute="leading" secondItem="Pa6-Dz-zNd" secondAttribute="trailing" id="SX1-Kb-Hu2"/>
+                                    <constraint firstItem="rP3-4n-vOq" firstAttribute="leading" secondItem="Siy-Yr-sHv" secondAttribute="leading" id="Tpd-n3-By8"/>
+                                    <constraint firstAttribute="trailing" secondItem="cBP-FI-4Sc" secondAttribute="trailing" id="WLn-bx-nxt"/>
                                     <constraint firstAttribute="trailing" secondItem="t0D-Sn-P3R" secondAttribute="trailing" id="Yee-i5-uE8"/>
+                                    <constraint firstItem="uNI-QP-j4N" firstAttribute="width" secondItem="rP3-4n-vOq" secondAttribute="width" id="c19-bM-dDV"/>
                                     <constraint firstItem="mcb-bV-YoG" firstAttribute="leading" secondItem="Siy-Yr-sHv" secondAttribute="leading" id="e6C-7P-LM3"/>
                                     <constraint firstItem="Pa6-Dz-zNd" firstAttribute="leading" secondItem="Siy-Yr-sHv" secondAttribute="leading" id="f4d-r6-xyB"/>
                                     <constraint firstAttribute="trailing" secondItem="vsL-1v-WWE" secondAttribute="trailing" id="gtm-KP-NnC"/>
+                                    <constraint firstItem="uNI-QP-j4N" firstAttribute="top" secondItem="cjk-3v-wxT" secondAttribute="bottom" id="hL2-ev-nc0"/>
                                     <constraint firstItem="45f-TV-dWf" firstAttribute="height" secondItem="Pa6-Dz-zNd" secondAttribute="height" id="ja9-yQ-221"/>
                                     <constraint firstItem="45f-TV-dWf" firstAttribute="top" secondItem="Siy-Yr-sHv" secondAttribute="top" id="oa4-ta-sdY"/>
+                                    <constraint firstItem="cBP-FI-4Sc" firstAttribute="top" secondItem="vsL-1v-WWE" secondAttribute="bottom" id="rpm-Cj-N28"/>
+                                    <constraint firstItem="cBP-FI-4Sc" firstAttribute="height" secondItem="rP3-4n-vOq" secondAttribute="height" id="tkX-fN-l0x"/>
+                                    <constraint firstItem="uNI-QP-j4N" firstAttribute="height" secondItem="rP3-4n-vOq" secondAttribute="height" id="v8u-tN-shi"/>
                                     <constraint firstItem="45f-TV-dWf" firstAttribute="width" secondItem="Pa6-Dz-zNd" secondAttribute="width" id="vce-6E-Zfz"/>
                                     <constraint firstItem="t0D-Sn-P3R" firstAttribute="top" secondItem="Siy-Yr-sHv" secondAttribute="top" id="ypf-MZ-Avc"/>
                                 </constraints>

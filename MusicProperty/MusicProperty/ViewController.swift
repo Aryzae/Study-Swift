@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import MediaPlayer
 
 enum FileType: String {
     case mp3 = "fire.mp3"
@@ -39,6 +40,7 @@ class ViewController: UIViewController {
             try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
             try AVAudioSession.sharedInstance().setActive(true)
             player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+            print(player?.settings ?? [:])
             selectedType = "mp3"
         } catch let error {
             print(error.localizedDescription)
@@ -51,6 +53,7 @@ class ViewController: UIViewController {
             try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
             try AVAudioSession.sharedInstance().setActive(true)
             player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.m4a.rawValue)
+            print(player?.settings ?? [:])
             selectedType = "aac"
         } catch let error {
             print(error.localizedDescription)
@@ -63,6 +66,7 @@ class ViewController: UIViewController {
             try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
             try AVAudioSession.sharedInstance().setActive(true)
             player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.m4a.rawValue)
+            print(player?.settings ?? [:])
             selectedType = "alac"
         } catch let error {
             print(error.localizedDescription)
@@ -75,6 +79,7 @@ class ViewController: UIViewController {
             try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
             try AVAudioSession.sharedInstance().setActive(true)
             player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+            print(player?.settings ?? [:])
             selectedType = "flac"
         } catch let error {
             print(error.localizedDescription)
@@ -87,10 +92,26 @@ class ViewController: UIViewController {
             try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
             try AVAudioSession.sharedInstance().setActive(true)
             player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.wav.rawValue)
+            print(player?.settings ?? [:])
              selectedType = "wave"
         } catch let error {
             print(error.localizedDescription)
         }
+    }
+
+    @IBAction func albums(_ sender: UIButton) {
+        let album = MPMediaQuery.albums()
+        guard let albums = album.collections else { return }
+        albums.forEach { print("\($0.representativeItem?.albumTitle ?? "") by \($0.representativeItem?.albumArtist ?? "")") }
+
+//        let item = MPMediaItem()
+//        item.rating
+    }
+
+    @IBAction func kari2(_ sender: UIButton) {
+    }
+
+    @IBAction func kari3(_ sender: UIButton) {
     }
 
     @IBAction func playAndStopButton(_ sender: UIButton) {
